@@ -1,0 +1,24 @@
+# Core UI
+streamlit>=1.37.0
+
+# If your model uses PyTorch
+torch>=2.1.0
+torchvision>=0.16.0
+torchaudio>=2.1.0
+
+# Video / media helpers (use headless builds for servers)
+opencv-python-headless>=4.8.0.76
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+pillow>=10.0.0
+
+# If you extract audio or handle mp4 containers, ffmpeg-python is useful.
+# NOTE: You still need system ffmpeg installed, or bundle binaries separately.
+ffmpeg-python>=0.2.0
+
+# If your Kaggle code used scikit-learn for scalers/encoders
+scikit-learn>=1.3.0
+
+# Optional progress bars / utils
+tqdm>=4.66.0

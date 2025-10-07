@@ -1,0 +1,20 @@
+- Mean Pooling
+- No early stopping
+- Validation metrics - mean absolute error, quadratic weighted κ, overall accuracy, Spearman’s ρ, and expected calibration error
+
+- 16 frames - uniformly distanced
+- Data Augmentation to get exact 5 video clips for each video
+= Normal 5 fold cross validation
+- 1 Layer in MLP (1536 - 512 - 3) with a dropout of 0.3
+
+
+
+THE FINAL METRICS ARE:-
+[cv] Summary (mean ± std):
+    MAE: 0.177 ± 0.053
+    QWK: 0.860 ± 0.040
+    ACC: 0.823 ± 0.053
+    RHO: 0.872 ± 0.048
+    ECE: 0.209 ± 0.043
+
+[done] Pipeline execution complete.

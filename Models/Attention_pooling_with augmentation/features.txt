@@ -1,0 +1,22 @@
+- Attention Pooling
+- Early stopping (patience = 3)
+- Validation metrics - mean absolute error, quadratic weighted κ, overall accuracy, Spearman’s ρ, expected calibration error, F1 (Macro), BAL (Balanced Accuracy)
+
+- 16 frames - uniformly distanced
+- Data Augmentation + remove clips with <3 second if the number of clips <5 + synthentically create clips upto 3
+= Normal 5 fold cross validation
+- 1 Layer in MLP (1536 - 512 - 3) with a dropout of 0.3
+
+
+
+THE FINAL METRICS ARE:-
+
+
+[cv] Summary (mean ± std):
+    MAE: 0.217 ± 0.101
+    QWK: 0.817 ± 0.090
+    ACC: 0.796 ± 0.099
+    RHO: 0.831 ± 0.093
+    ECE: 0.249 ± 0.031
+    BAL: 0.798 ± 0.095
+     F1: 0.781 ± 0.119

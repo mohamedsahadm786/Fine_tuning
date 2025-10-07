@@ -1,0 +1,23 @@
+- Attention Pooling
+- Early stopping (patience = 3)
+- Validation metrics - mean absolute error, quadratic weighted κ, overall accuracy, Spearman’s ρ, expected calibration error, F1 (Macro), BAL (Balanced Accuracy) + Fold-Logit Ensemble (with Per-Fold T) for Inference
+
+- 16 frames - uniformly distanced
+- No Data Augmentation + remove clips with <10 second if the number of clips >5 
+= Group K fold cross validation
+- 1 Layer in MLP (1536 - 512 - 3) with a dropout of 0.3
+
+
+
+THE FINAL METRICS ARE:-
+
+
+[cv] Summary (mean ± std):
+    MAE: 0.405 ± 0.317
+    QWK: 0.356 ± 0.364
+    ACC: 0.632 ± 0.270
+    RHO: 0.334 ± 0.438
+    ECE: 0.337 ± 0.076
+    BAL: 0.708 ± 0.175
+     F1: 0.589 ± 0.317
+[ensemble] ACC=0.772 F1=0.775 ECE=0.113

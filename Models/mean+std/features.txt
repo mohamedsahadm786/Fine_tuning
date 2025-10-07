@@ -1,0 +1,22 @@
+- Mean + std Pooling
+- Early stopping (patience = 3)
+- Validation metrics - mean absolute error, quadratic weighted κ, overall accuracy, Spearman’s ρ, expected calibration error, F1 (Macro), BAL (Balanced Accuracy)
+
+- 16 frames - uniformly distanced
+- No Data Augmentation + remove clips with <3 second if the number of clips <5
+= Normal 5 fold cross validation
+- 1 Layer in MLP (1536 - 512 - 3) with a dropout of 0.3
+
+
+
+THE FINAL METRICS ARE:-
+[cv] Summary (mean ± std):
+    MAE: 0.254 ± 0.102
+    QWK: 0.785 ± 0.093
+    ACC: 0.758 ± 0.087
+    RHO: 0.802 ± 0.097
+    ECE: 0.239 ± 0.055
+    BAL: 0.756 ± 0.080
+     F1: 0.730 ± 0.130
+
+[done] Pipeline execution complete.
